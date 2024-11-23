@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Команда сервера "Сервер для котиков"</title>
+<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+<style>
+body {
+    margin: 0px;
+    padding: 20px;
+    background-color: rgb(21,32,43);
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+header {
+    background: linear-gradient(to right, #eeff00, #ff0000);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+    z-index: 1;
+    font: 400 1em/1.5 'Neuton';
+    margin: auto;
+    user-select: text;
+}
+
+header h1 {
+    font: 900 4em/1 'Oswald', sans-serif;
+    letter-spacing: 0;
+    padding: 0.25em 0 0.325em;
+    margin: 0 auto;
+}
+
+section {
+    margin: 40px 0;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.role-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+    gap: 20px;
+}
+
+.role-card {
+    display: flex;
+    align-items: center;
+    border: 4px solid;
+    border-image-slice: 1;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 0 10px;
+    color: white;
+    max-width: 350px;
+}
+
+.role-card img {
+    border-radius: 8px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.role-info {
+    text-align: left;
+    flex: 1;
+}
+
+.nickname {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+.mention {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #bbbbbb;
+}
+
+.description {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+.id {
+    font-size: 12px;
+    color: #888888;
+}
+
+.term {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.warnings {
+    font-size: 14px;
+    color: #ff4e42;
+}
+
+.role-card.admin {
+    border-image-source: linear-gradient(to right, #ff7e5f, #feb47b);
+}
+
+.role-card.senior-moderator {
+    border-image-source: linear-gradient(to right, #43cea2, #185a9d);
+}
+
+.role-card.moderator {
+    border-image-source: linear-gradient(to right, #00c6ff, #0072ff);
+}
+
+.role-card.helper {
+    border-image-source: linear-gradient(to right, #f7971e, #ffd200);
+}
+
+</style>
+</head>
+<body>
+<header>
+<h1>Команда сервера "Сервер для котиков"</h1>
+</header>
+
+<section>
+<div class="role-wrapper">
+    <div class="text-wrapper">
+        <div class="role-card admin">
+            <img src="admin.png" alt="Администратор">
+            <div class="role-info">
+                <div class="nickname">Котик Креатер☕</div>
+                <div class="mention">@meowhiks</div>
+                <div class="description">☕</div>
+                <div class="id">ID: 705015972473470994</div>
+            </div>
+        </div>
+        <h1>Администратор</h1>
+    </div>
+    <div class="text-wrapper">
+        <div class="role-card senior-moderator">
+            <img src="stmod.png" alt="Котик Димусус">
+            <div class="role-info">
+                <div class="nickname">Котик Димусус</div>
+                <div class="mention">@dkur_</div>
+                <div class="description">"Ошибаться можно - врать нельзя."</div>
+                <div class="warnings">Выговоров: 0/3</div>
+                <div class="id">ID: 913721918073479169</div>
+            </div>
+        </div>
+        <h1>Старший модератор</h1>
+    </div>
+    <div class="text-wrapper">
+        <div class="role-card moderator">
+            <img src="None.png" alt="Модератор">
+            <div class="role-info">
+                <div class="nickname">Свободное место</div>
+                <div class="mention">@None</div>
+                <div class="description">None</div>
+                <div class="term">Срок: 30 дней</div>
+                <div class="warnings">Выговоров: 0/3</div>
+                <div class="id">ID: None</div>
+            </div>
+        </div>
+        <h1>Модератор</h1>
+    </div>
+    <div class="text-wrapper">
+        <div class="role-card moderator">
+            <img src="None.png" alt="Модератор">
+            <div class="role-info">
+                <div class="nickname">Свободное место</div>
+                <div class="mention">@None</div>
+                <div class="description">None</div>
+                <div class="term">Срок: 30 дней</div>
+                <div class="warnings">Выговоров: 0/3</div>
+                <div class="id">ID: None</div>
+                
+            </div>
+            
+        </div>
+        <h1>Модератор</h1>
+    </div>
+    <div class="text-wrapper">
+        <div class="role-card helper">
+            <img src="None.png" alt="Модератор">
+            <div class="role-info">
+                <div class="nickname">Свободное место</div>
+                <div class="mention">@None</div>
+                <div class="description">None</div>
+                <div class="term">Срок: 30 дней</div>
+                <div class="warnings">Выговоров: 0/3</div>
+                <div class="id">ID: None</div>
+            </div>
+        </div>
+        <h1>Хелпер</h1>
+    </div>
+</div>
+</section>
+</body>
+</html>
