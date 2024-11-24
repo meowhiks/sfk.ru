@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Правила сервера "Сервер для котиков"</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <style>
         body {
             margin: 0px;
@@ -124,22 +125,55 @@
         .punishment .text {
             transition: none;
         }
+
         header {
             background: linear-gradient(to right, #eeff00, #ff0000);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  text-align: center;
-  z-index: 1;
-  font: 400 1em/1.5 'Neuton';
-  margin: auto;
-  user-select: text;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-align: center;
+            z-index: 1;
+            font: 400 1em/1.5 'Neuton';
+            margin: auto;
+            user-select: text;
         }
+
         header h1 {
             font: 900 4em/1 'Oswald', sans-serif;
             letter-spacing: 0;
             padding: 0.25em 0 0.325em;
             margin: 0 auto;
+        }
+
+        .search-bar {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .search-bar input {
+            padding: 10px;
+            width: 80%;
+            font-size: 18px;
+            border-radius: 8px;
+            border: none;
+        }
+
+        .search-bar button {
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 8px;
+            border: none;
+            background-color: #d4810b;
+            color: white;
+            cursor: pointer;
+        }
+
+        .search-bar button:hover {
+            background-color: #b36b09;
+        }
+
+        .hidden-tags {
+            display: none;
         }
     </style>
 </head>
@@ -147,7 +181,11 @@
     <header>
         <h1>Правила сервера "Сервер для котиков"</h1>
     </header>
-    
+
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Поиск по правилам...">
+        <button onclick="searchRules()">Поиск</button>
+    </div>
 
     <!-- Правило 1.1 -->
     <div class="rule">
@@ -156,6 +194,7 @@
         <div class="rule-text">
             Присоединяясь к серверу, вы соглашаетесь с данными правилами и обязуетесь их соблюдать.
         </div>
+        <div class="hidden-tags">принятие правил, согласие, соблюдение</div>
     </div>
 
     <!-- Правило 1.2 -->
@@ -165,6 +204,7 @@
         <div class="rule-text">
             Все пользователи равны перед правилами, независимо от статуса или роли.
         </div>
+        <div class="hidden-tags">равенство, участники, статус, роль</div>
     </div>
 
     <!-- Правило 1.3 -->
@@ -177,6 +217,7 @@
         <div class="punishment">
             <span class="label">Наказание</span>: <span class="text">Блокировка аккаунта.</span>
         </div>
+        <div class="hidden-tags">подлинность, аккаунт, фейк, изображения</div>
     </div>
 
     <!-- Правило 1.4 -->
@@ -189,6 +230,7 @@
         <div class="punishment">
             <span class="label">Наказание</span>: <span class="text">Блокировка аккаунта или предупреждение.</span>
         </div>
+        <div class="hidden-tags">повторные нарушения, наказание, строгие меры</div>
     </div>
 
     <!-- Правило 1.5 -->
@@ -201,6 +243,7 @@
         <div class="punishment">
             <span class="label">Наказание</span>: <span class="text">Блокировка аккаунта или предупреждение.</span>
         </div>
+        <div class="hidden-tags">уязвимости, баги, преимущества, обход правил</div>
     </div>
 
     <!-- Правило 1.6 -->
@@ -213,6 +256,7 @@
         <div class="punishment">
             <span class="label">Наказание</span>: <span class="text">Блокировка аккаунта или предупреждение.</span>
         </div>
+        <div class="hidden-tags">конфиденциальность, личная информация, разглашение</div>
     </div>
 
     <!-- Правило 1.7 -->
@@ -222,6 +266,7 @@
         <div class="rule-text">
             Модераторы имеют право принимать решения о нарушениях и применять соответствующие меры. Их действия могут быть обжалованы в установленном порядке.
         </div>
+        <div class="hidden-tags">модерация, решения, нарушения, меры</div>
     </div>
 
     <!-- Раздел 2 -->
@@ -237,6 +282,7 @@
         <div class="punishment">
             <span class="label">Наказание</span>: <span class="text">Тайм-аут от 1 до 6 часов.</span>
         </div>
+        <div class="hidden-tags">уважительное общение, оскорбления, угрозы, дискриминация</div>
     </div>
 
     <!-- Правило 2.2 -->
@@ -249,6 +295,7 @@
         <div class="punishment">
             <span class="label">Наказание</span>: <span class="text">Тайм-аут от 10 до 60 минут.</span>
         </div>
+        <div class="hidden-tags">ненормативная лексика, умеренное использование, контекст</div>
     </div>
 
     <!-- Правило 2.3 -->
@@ -261,6 +308,7 @@
         <div class="punishment">
             <span class="label">Наказание</span>: <span class="text">Блокировка аккаунта или предупреждение.</span>
         </div>
+        <div class="hidden-tags">спам, реклама, вредоносные ссылки</div>
     </div>
 
     <!-- Правило 2.4 -->
@@ -273,6 +321,7 @@
         <div class="punishment">
             <span class="label">Наказание</span>: <span class="text">Тайм-аут от 10 до 600 минут.</span>
         </div>
+        <div class="hidden-tags">тема канала, обсуждения, соответствие</div>
     </div>
 
     <!-- Правило 2.5 -->
@@ -285,6 +334,7 @@
         <div class="punishment">
             <span class="label">Наказание</span>: <span class="text">Тайм-аут от 10 до 600 минут.</span>
         </div>
+        <div class="hidden-tags">флуд, однотипные сообщения, бессмысленные сообщения</div>
     </div>
 
     <!-- Правило 2.6 -->
@@ -297,6 +347,7 @@
         <div class="punishment">
             <span class="label">Наказание</span>: <span class="text">Временная блокировка или предупреждение.</span>
         </div>
+        <div class="hidden-tags">деструктивное поведение, бунты, ложная информация, оскорбления</div>
     </div>
 
     <!-- Правило 2.7 -->
@@ -309,6 +360,7 @@
         <div class="punishment">
             <span class="label">Наказание</span>: <span class="text">Предупреждение или тайм-аут от 1 до 14 дней.</span>
         </div>
+        <div class="hidden-tags">контент для взрослых, 18+, nsfw</div>
     </div>
 
     <!-- Правило 2.8 -->
@@ -321,6 +373,7 @@
         <div class="punishment">
             <span class="label">Наказание</span>: <span class="text">Предупреждение.</span>
         </div>
+        <div class="hidden-tags">создание помех, работа сервера, тикеты</div>
     </div>
 
     <!-- Правило 2.9 -->
@@ -333,6 +386,7 @@
         <div class="punishment">
             <span class="label">Наказание</span>: <span class="text">Временная блокировка или предупреждение.</span>
         </div>
+        <div class="hidden-tags">выдача себя, администрация, модераторы</div>
     </div>
 
     <!-- Раздел 3 -->
@@ -348,6 +402,7 @@
         <div class="punishment">
             <span class="label">Наказание</span>: <span class="text">Предупреждение, затем временный запрет на участие.</span>
         </div>
+        <div class="hidden-tags">качество связи, гарнитура, фоновые шумы</div>
     </div>
 
     <!-- Правило 3.2 -->
@@ -355,57 +410,4 @@
         <span class="effect"></span><span class="effect"></span><span class="effect"></span><span class="effect"></span>
         <div class="rule-title">3.2 Изменение голоса</div>
         <div class="rule-text">
-            Допустимо использование программ для изменения голоса, если это не мешает общению (исключение: канал no-rules).
-        </div>
-        <div class="punishment">
-            <span class="label">Наказание</span>: <span class="text">Предупреждение, затем временный запрет на участие.</span>
-        </div>
-    </div>
-
-
-    <!-- Правило 3.3 -->
-    <div class="rule">
-        <span class="effect"></span><span class="effect"></span><span class="effect"></span><span class="effect"></span>
-        <div class="rule-title">3.3 Запрет на рекламу</div>
-        <div class="rule-text">
-            Реклама в голосовых каналах запрещена.
-        </div>
-        <div class="punishment">
-            <span class="label">Наказание</span>: <span class="text">Предупреждение, блокировка или временный запрет на участие.</span>
-        </div>
-    </div>
-
-    <!-- Правило 3.4 -->
-    <div class="rule">
-        <span class="effect"></span><span class="effect"></span><span class="effect"></span><span class="effect"></span>
-        <div class="rule-title">3.4 Звуковые эффекты</div>
-        <div class="rule-text">
-            Используйте звуковые эффекты умеренно и не мешайте другим участникам.
-        </div>
-        <div class="punishment">
-            <span class="label">Наказание</span>: <span class="text">Предупреждение, затем временный запрет на участие.</span>
-        </div>
-    </div>
-
-    <!-- Раздел 4 -->
-    <h2>4. Заключительные положения</h2>
-
-    <!-- Обжалование наказаний -->
-    <div class="rule">
-        <span class="effect"></span><span class="effect"></span><span class="effect"></span><span class="effect"></span>
-        <div class="rule-title">4.1 Обжалование наказаний</div>
-        <div class="rule-text">
-            Если вы не согласны с действиями модерации, вы можете обжаловать решение, связавшись с администрацией.
-        </div>
-    </div>
-
-    <div class="rule">
-        <span class="effect"></span><span class="effect"></span><span class="effect"></span><span class="effect"></span>
-        <div class="rule-title">4.2 Изменение правил</div>
-        <div class="rule-text">
-            Администрация оставляет за собой право изменять правила с уведомлением пользователей.
-        </div>
-    </div>
-
-</body>
-</html>
+            Допустимо использование программ для изменения голоса, если это не
