@@ -1,0 +1,9 @@
+Имя: FredBoat♪♪
+ID: 184405311681986560
+Статус: offline
+Присоединился: 2024-02-10 06:06:58.435000+00:00
+Бот: Да
+is_moderator: False
+is_st_moderator: False
+is_admin: False
+Репутация: 0

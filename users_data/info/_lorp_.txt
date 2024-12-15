@@ -1,0 +1,9 @@
+Имя: _lorp_
+ID: 1232324049087103053
+Статус: offline
+Присоединился: 2024-08-11 20:32:43.067000+00:00
+Бот: Нет
+is_moderator: False
+is_st_moderator: False
+is_admin: False
+Репутация: 0

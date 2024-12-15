@@ -1,0 +1,9 @@
+Имя: mrobert666
+ID: 677914228329545787
+Статус: offline
+Присоединился: 2024-09-01 05:24:38.662000+00:00
+Бот: Нет
+is_moderator: False
+is_st_moderator: False
+is_admin: False
+Репутация: 0

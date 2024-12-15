@@ -1,0 +1,9 @@
+Имя: woozi18
+ID: 562631957411004426
+Статус: offline
+Присоединился: 2024-06-16 16:49:43.409000+00:00
+Бот: Нет
+is_moderator: False
+is_st_moderator: False
+is_admin: False
+Репутация: 0

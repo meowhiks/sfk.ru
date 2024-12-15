@@ -1,0 +1,9 @@
+Имя: archimedaseng
+ID: 665225419699781692
+Статус: offline
+Присоединился: 2024-09-11 10:03:39.456000+00:00
+Бот: Нет
+is_moderator: False
+is_st_moderator: False
+is_admin: False
+Репутация: 0

@@ -1,0 +1,9 @@
+Имя: pahomka
+ID: 898619725028929538
+Статус: offline
+Присоединился: 2024-10-28 17:36:28.714000+00:00
+Бот: Нет
+is_moderator: False
+is_st_moderator: False
+is_admin: False
+Репутация: 0

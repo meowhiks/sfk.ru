@@ -1,0 +1,9 @@
+Имя: cloudy.top
+ID: 644522872542461962
+Статус: offline
+Присоединился: 2023-12-04 10:59:29.578000+00:00
+Бот: Нет
+is_moderator: False
+is_st_moderator: False
+is_admin: False
+Репутация: 0

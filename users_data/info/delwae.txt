@@ -1,0 +1,9 @@
+Имя: delwae
+ID: 1102560993080508527
+Статус: offline
+Присоединился: 2024-03-25 16:35:31.631000+00:00
+Бот: Нет
+is_moderator: False
+is_st_moderator: False
+is_admin: False
+Репутация: 0

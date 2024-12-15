@@ -1,0 +1,9 @@
+Имя: RoomCreator
+ID: 894811786434469908
+Статус: offline
+Присоединился: 2024-07-24 11:37:54.636000+00:00
+Бот: Да
+is_moderator: False
+is_st_moderator: False
+is_admin: False
+Репутация: 0

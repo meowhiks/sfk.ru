@@ -1,0 +1,9 @@
+Имя: ous55f
+ID: 1251645515519758408
+Статус: offline
+Присоединился: 2024-06-25 02:35:45.928000+00:00
+Бот: Нет
+is_moderator: False
+is_st_moderator: False
+is_admin: False
+Репутация: 0

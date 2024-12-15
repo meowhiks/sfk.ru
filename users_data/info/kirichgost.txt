@@ -1,0 +1,9 @@
+Имя: kirichgost
+ID: 828587255663820852
+Статус: offline
+Присоединился: 2024-08-09 07:26:38.864000+00:00
+Бот: Нет
+is_moderator: False
+is_st_moderator: False
+is_admin: False
+Репутация: 0

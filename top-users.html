@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Топ пользователей</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <style>
+    </style>
+</head>
+<body class="min-h-screen bg-gray-900 text-white p-8">
+    <h1 class="text-4xl font-bold mb-8 text-center glow">Топ пользователей</h1>
+    <div class="max-w-3xl mx-auto" id="users-container"></div>
+
+    <script>
+        const users = [
+            { name: "Котик Кенесси", status: "kenessl", hours: 81, avatar: "kenessl.png", color: "from-yellow-400 to-red-500" },
+            { name: "Котик Ремаг3н", status: "remqg3n_sl", hours: 75, avatar: "remag3n_sl.png", color: "from-purple-400 to-pink-500" },
+            { name: "Котик Котстантинус", status: "kotstantinys", hours: 27, avatar: "kotstantinys.png", color: "from-green-400 to-blue-500" },
+            { name: "Котик Нафаня", status: "koffany_301", hours: 24, avatar: "koffany_301.png", color: "from-red-400 to-dark-green-500" },
+            { name: "Котик Банан", status: "not_banan9457", hours: 16, avatar: "not_banan9457.png", color: "from-red-400 to-dark-green-500" },
+        ];
+
+        const usersContainer = document.getElementById('users-container');
+
+        users.forEach((user, index) => {
+            const userElement = document.createElement('div');
+            userElement.className = `bg-gray-800 p-4 rounded-lg mb-4 flex items-center relative overflow-hidden group`;
+            userElement.innerHTML = `
+                <div class="absolute inset-0 bg-gradient-to-r ${user.color} opacity-20 group-hover:opacity-40 transition-opacity duration-300"></div>
+                <img src="${user.avatar}" alt="${user.name}" class="w-16 h-16 rounded-full mr-4 z-10">
+                <div class="z-10">
+                    <h2 class="text-xl font-semibold">${user.name}</h2>
+                    <p class="text-gray-400">${user.status} • ${user.hours} часов</p>
+                </div>
+                <div class="absolute ${index === 0 ? '-top-2 -right-2' : index === 1 ? '-bottom-2 -right-2' : '-bottom-2 -left-2'} w-16 h-16 bg-${index === 0 ? 'yellow' : index === 1 ? 'purple' : 'green'}-500 rounded-full opacity-50"></div>
+            `;
+            usersContainer.appendChild(userElement);
+
+            gsap.from(userElement, {
+                opacity: 0,
+                x: -50,
+                duration: 0.3,
+                delay: index * 0.1
+            });
+
+            const hoverEffect = index === 0 ? { scale: 1.05, rotation: 2 } :
+                                index === 1 ? { scale: 1.05, skewX: 2 } :
+                                { scale: 1.05, y: -5 };
+
+            userElement.addEventListener('mouseenter', () => {
+                gsap.to(userElement, {
+                    ...hoverEffect,
+                    duration: 0.3
+                });
+                gsap.to(userElement.querySelector('.rounded-full:last-child'), {
+                    scale: 1.2,
+                    rotation: index === 0 ? 360 : 0,
+                    x: index === 1 ? 10 : 0,
+                    y: index === 2 ? 10 : 0,
+                    duration: 3,
+                    repeat: -1
+                });
+            });
+
+            userElement.addEventListener('mouseleave', () => {
+                gsap.to(userElement, {
+                    scale: 1,
+                    rotation: 0,
+                    skewX: 0,
+                    y: 0,
+                    duration: 0.3
+                });
+                gsap.to(userElement.querySelector('.rounded-full:last-child'), {
+                    scale: 1,
+                    rotation: 0,
+                    x: 0,
+                    y: 0,
+                    duration: 0.3
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+

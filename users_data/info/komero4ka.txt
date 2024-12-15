@@ -1,0 +1,9 @@
+Имя: komero4ka
+ID: 1080507718567219250
+Статус: offline
+Присоединился: 2024-04-09 18:55:30.260000+00:00
+Бот: Нет
+is_moderator: False
+is_st_moderator: False
+is_admin: False
+Репутация: 0

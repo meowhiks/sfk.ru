@@ -1,0 +1,9 @@
+Имя: komaru_777
+ID: 873969934651244644
+Статус: offline
+Присоединился: 2024-05-14 08:54:50.013000+00:00
+Бот: Нет
+is_moderator: False
+is_st_moderator: False
+is_admin: False
+Репутация: 0

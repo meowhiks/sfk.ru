@@ -1,0 +1,9 @@
+Имя: backdown0388_66591
+ID: 1235187927084961844
+Статус: offline
+Присоединился: 2024-05-07 18:46:24.221000+00:00
+Бот: Нет
+is_moderator: False
+is_st_moderator: False
+is_admin: False
+Репутация: 0

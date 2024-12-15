@@ -1,0 +1,9 @@
+Имя: DSMonitoring
+ID: 575776004233232386
+Статус: offline
+Присоединился: 2024-12-03 13:56:16.800000+00:00
+Бот: Да
+is_moderator: False
+is_st_moderator: False
+is_admin: False
+Репутация: 0

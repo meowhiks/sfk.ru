@@ -1,0 +1,9 @@
+Имя: tyshenka.
+ID: 964458037278539856
+Статус: offline
+Присоединился: 2024-11-12 18:27:11.996000+00:00
+Бот: Нет
+is_moderator: False
+is_st_moderator: False
+is_admin: False
+Репутация: 0

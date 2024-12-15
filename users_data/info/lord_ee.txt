@@ -1,0 +1,9 @@
+Имя: lord_ee
+ID: 748898320621240391
+Статус: offline
+Присоединился: 2024-09-20 11:09:38.288000+00:00
+Бот: Нет
+is_moderator: False
+is_st_moderator: False
+is_admin: False
+Репутация: 0

@@ -1,0 +1,9 @@
+Имя: kpytou_4ejlovek
+ID: 1105118078427209768
+Статус: offline
+Присоединился: 2023-10-08 08:15:56.431000+00:00
+Бот: Нет
+is_moderator: False
+is_st_moderator: False
+is_admin: False
+Репутация: 0

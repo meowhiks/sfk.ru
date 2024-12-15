@@ -1,0 +1,9 @@
+Имя: mrroozer._37387
+ID: 1243604981962117204
+Статус: offline
+Присоединился: 2024-10-06 09:09:29.193000+00:00
+Бот: Нет
+is_moderator: False
+is_st_moderator: False
+is_admin: False
+Репутация: 0

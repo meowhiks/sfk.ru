@@ -1,0 +1,9 @@
+Имя: artmkk52_41495
+ID: 1249933882804142132
+Статус: offline
+Присоединился: 2024-06-11 06:54:51.668000+00:00
+Бот: Нет
+is_moderator: False
+is_st_moderator: False
+is_admin: False
+Репутация: 0

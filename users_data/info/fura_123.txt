@@ -1,0 +1,9 @@
+Имя: fura_123
+ID: 817847711121408000
+Статус: offline
+Присоединился: 2024-04-12 19:31:22.742000+00:00
+Бот: Нет
+is_moderator: False
+is_st_moderator: False
+is_admin: False
+Репутация: 0

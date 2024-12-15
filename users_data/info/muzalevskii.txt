@@ -1,0 +1,9 @@
+Имя: muzalevskii
+ID: 947539557807706162
+Статус: offline
+Присоединился: 2023-07-10 16:55:48.937000+00:00
+Бот: Нет
+is_moderator: False
+is_st_moderator: False
+is_admin: False
+Репутация: 0

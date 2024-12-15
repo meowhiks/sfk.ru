@@ -1,0 +1,9 @@
+Имя: morgan_naomi
+ID: 904420124239486976
+Статус: offline
+Присоединился: 2024-02-10 13:01:38.084000+00:00
+Бот: Нет
+is_moderator: False
+is_st_moderator: False
+is_admin: False
+Репутация: 0

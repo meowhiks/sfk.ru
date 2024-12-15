@@ -1,0 +1,9 @@
+Имя: NQN
+ID: 559426966151757824
+Статус: offline
+Присоединился: 2023-06-25 15:52:16.113000+00:00
+Бот: Да
+is_moderator: False
+is_st_moderator: False
+is_admin: False
+Репутация: 0

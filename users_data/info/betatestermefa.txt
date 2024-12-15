@@ -1,0 +1,9 @@
+Имя: betatestermefa
+ID: 416469995640324096
+Статус: offline
+Присоединился: 2024-09-29 08:17:20.087000+00:00
+Бот: Нет
+is_moderator: False
+is_st_moderator: False
+is_admin: False
+Репутация: 0

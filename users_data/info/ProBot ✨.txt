@@ -1,0 +1,9 @@
+Имя: ProBot ✨
+ID: 282859044593598464
+Статус: offline
+Присоединился: 2024-07-22 15:34:30.037000+00:00
+Бот: Да
+is_moderator: False
+is_st_moderator: False
+is_admin: False
+Репутация: 0

@@ -1,0 +1,9 @@
+Имя: legenda_2lol
+ID: 495956580148314113
+Статус: offline
+Присоединился: 2024-08-08 19:00:30.208000+00:00
+Бот: Нет
+is_moderator: False
+is_st_moderator: False
+is_admin: False
+Репутация: 0

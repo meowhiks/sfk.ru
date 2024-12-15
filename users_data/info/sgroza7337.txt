@@ -1,0 +1,9 @@
+Имя: sgroza7337
+ID: 847512251610038333
+Статус: offline
+Присоединился: 2023-06-15 07:49:47.336000+00:00
+Бот: Нет
+is_moderator: False
+is_st_moderator: False
+is_admin: False
+Репутация: 0

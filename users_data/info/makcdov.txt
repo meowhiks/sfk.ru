@@ -1,0 +1,9 @@
+Имя: makcdov
+ID: 645942731436195841
+Статус: offline
+Присоединился: 2023-06-15 14:39:17.925000+00:00
+Бот: Нет
+is_moderator: False
+is_st_moderator: False
+is_admin: False
+Репутация: 0

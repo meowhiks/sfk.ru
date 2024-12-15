@@ -1,0 +1,9 @@
+Имя: .ro_ma_n
+ID: 969197102645252146
+Статус: offline
+Присоединился: 2023-09-01 07:32:48.492000+00:00
+Бот: Нет
+is_moderator: False
+is_st_moderator: False
+is_admin: False
+Репутация: 0

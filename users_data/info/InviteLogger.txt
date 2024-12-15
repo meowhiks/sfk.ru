@@ -1,0 +1,9 @@
+Имя: InviteLogger
+ID: 499595256270946326
+Статус: offline
+Присоединился: 2024-05-02 15:15:03.094000+00:00
+Бот: Да
+is_moderator: False
+is_st_moderator: False
+is_admin: False
+Репутация: 0

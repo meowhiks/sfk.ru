@@ -1,0 +1,9 @@
+Имя: da_4to7697
+ID: 617068728399560817
+Статус: offline
+Присоединился: 2023-06-15 11:11:03.315000+00:00
+Бот: Нет
+is_moderator: True
+is_st_moderator: False
+is_admin: False
+Репутация: 0

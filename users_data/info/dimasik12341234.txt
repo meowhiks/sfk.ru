@@ -1,0 +1,9 @@
+Имя: dimasik12341234
+ID: 1257982472302497802
+Статус: offline
+Присоединился: 2024-07-03 12:21:53.802000+00:00
+Бот: Нет
+is_moderator: False
+is_st_moderator: False
+is_admin: False
+Репутация: 0

@@ -1,0 +1,9 @@
+Имя: koffany_301
+ID: 747016553211625524
+Статус: offline
+Присоединился: 2023-07-14 10:07:52.165000+00:00
+Бот: Нет
+is_moderator: False
+is_st_moderator: False
+is_admin: False
+Репутация: 0

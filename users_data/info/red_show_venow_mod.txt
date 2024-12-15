@@ -1,0 +1,9 @@
+Имя: red_show_venow_mod
+ID: 1154758874281291856
+Статус: offline
+Присоединился: 2024-12-11 11:20:28.136000+00:00
+Бот: Нет
+is_moderator: False
+is_st_moderator: False
+is_admin: False
+Репутация: 0

@@ -1,0 +1,9 @@
+Имя: .rosykaoff
+ID: 516665575012040729
+Статус: offline
+Присоединился: 2023-08-05 19:28:10.548000+00:00
+Бот: Нет
+is_moderator: False
+is_st_moderator: False
+is_admin: False
+Репутация: 0

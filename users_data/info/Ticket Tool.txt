@@ -1,0 +1,9 @@
+Имя: Ticket Tool
+ID: 557628352828014614
+Статус: offline
+Присоединился: 2024-07-02 20:31:18.891000+00:00
+Бот: Да
+is_moderator: False
+is_st_moderator: False
+is_admin: False
+Репутация: 0

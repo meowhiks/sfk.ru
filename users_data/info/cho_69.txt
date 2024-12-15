@@ -1,0 +1,9 @@
+Имя: cho_69
+ID: 1016239714816249856
+Статус: offline
+Присоединился: 2023-10-31 14:02:05.236000+00:00
+Бот: Нет
+is_moderator: False
+is_st_moderator: False
+is_admin: False
+Репутация: 0

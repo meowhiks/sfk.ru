@@ -1,0 +1,9 @@
+Имя: horich4
+ID: 1016402267257180292
+Статус: offline
+Присоединился: 2024-11-14 16:37:25.613000+00:00
+Бот: Нет
+is_moderator: False
+is_st_moderator: False
+is_admin: False
+Репутация: 0
