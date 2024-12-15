@@ -6,4 +6,4 @@ ID: 1250727963654094892
 is_moderator: False
 is_st_moderator: False
 is_admin: False
-Репутация: 0
+Репутация: 98
