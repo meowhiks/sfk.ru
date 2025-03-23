@@ -1,9 +1,0 @@
-Имя: Statbot
-ID: 491769129318088714
-Статус: offline
-Присоединился: 2024-02-24 06:36:57.926000+00:00
-Бот: Да
-is_moderator: False
-is_st_moderator: False
-is_admin: False
-Репутация: 0

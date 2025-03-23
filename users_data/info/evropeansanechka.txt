@@ -1,9 +1,0 @@
-Имя: evropeansanechka
-ID: 1214854215533334624
-Статус: offline
-Присоединился: 2024-04-01 03:08:42.541000+00:00
-Бот: Нет
-is_moderator: False
-is_st_moderator: False
-is_admin: False
-Репутация: 0

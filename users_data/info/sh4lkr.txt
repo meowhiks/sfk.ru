@@ -1,9 +1,0 @@
-Имя: sh4lkr
-ID: 868965130522734673
-Статус: offline
-Присоединился: 2023-03-09 01:10:09.356000+00:00
-Бот: Нет
-is_moderator: False
-is_st_moderator: False
-is_admin: False
-Репутация: 0

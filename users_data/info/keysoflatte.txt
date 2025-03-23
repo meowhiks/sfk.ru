@@ -1,9 +1,0 @@
-Имя: keysoflatte
-ID: 1222116753199468585
-Статус: offline
-Присоединился: 2024-03-26 10:11:56.081000+00:00
-Бот: Нет
-is_moderator: False
-is_st_moderator: False
-is_admin: False
-Репутация: 0

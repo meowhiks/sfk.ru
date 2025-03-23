@@ -1,9 +1,0 @@
-Имя: akekich
-ID: 605411791358656545
-Статус: offline
-Присоединился: 2024-05-14 19:33:18.681000+00:00
-Бот: Нет
-is_moderator: False
-is_st_moderator: False
-is_admin: False
-Репутация: 0

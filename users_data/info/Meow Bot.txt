@@ -1,9 +1,0 @@
-Имя: Meow Bot
-ID: 1117753688019189791
-Статус: offline
-Присоединился: 2023-06-12 09:55:27.043000+00:00
-Бот: Да
-is_moderator: False
-is_st_moderator: False
-is_admin: False
-Репутация: 0

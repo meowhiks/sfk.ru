@@ -1,9 +1,0 @@
-Имя: aken1012
-ID: 1218158687932125195
-Статус: offline
-Присоединился: 2024-05-04 16:46:12.074000+00:00
-Бот: Нет
-is_moderator: False
-is_st_moderator: False
-is_admin: False
-Репутация: 0

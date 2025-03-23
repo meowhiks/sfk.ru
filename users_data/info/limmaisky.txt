@@ -1,9 +1,0 @@
-Имя: limmaisky
-ID: 1162749077998547084
-Статус: offline
-Присоединился: 2024-08-06 21:20:49.415000+00:00
-Бот: Нет
-is_moderator: False
-is_st_moderator: False
-is_admin: False
-Репутация: 0

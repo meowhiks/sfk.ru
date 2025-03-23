@@ -1,9 +1,0 @@
-Имя: bonboni.
-ID: 793058555212988427
-Статус: offline
-Присоединился: 2024-08-07 00:22:58.446000+00:00
-Бот: Нет
-is_moderator: False
-is_st_moderator: False
-is_admin: False
-Репутация: 0

@@ -1,9 +1,0 @@
-Имя: danqo16ez
-ID: 458609642453336064
-Статус: offline
-Присоединился: 2023-07-21 20:10:06.151000+00:00
-Бот: Нет
-is_moderator: False
-is_st_moderator: False
-is_admin: False
-Репутация: 0

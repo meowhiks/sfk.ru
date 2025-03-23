@@ -1,9 +1,0 @@
-Имя: svd310811
-ID: 1070669976333209721
-Статус: offline
-Присоединился: 2024-01-02 17:53:17.859000+00:00
-Бот: Нет
-is_moderator: False
-is_st_moderator: False
-is_admin: False
-Репутация: 0

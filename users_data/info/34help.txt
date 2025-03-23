@@ -1,9 +1,0 @@
-Имя: 34help
-ID: 786665686809444363
-Статус: offline
-Присоединился: 2024-04-20 19:11:07.918000+00:00
-Бот: Нет
-is_moderator: False
-is_st_moderator: False
-is_admin: False
-Репутация: 0

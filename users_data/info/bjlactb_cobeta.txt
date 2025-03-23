@@ -1,9 +1,0 @@
-Имя: bjlactb_cobeta
-ID: 1157241859962306590
-Статус: offline
-Присоединился: 2024-09-08 03:39:29.100000+00:00
-Бот: Нет
-is_moderator: False
-is_st_moderator: False
-is_admin: False
-Репутация: 0

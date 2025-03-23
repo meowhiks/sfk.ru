@@ -1,9 +1,0 @@
-Имя: shut0302
-ID: 896793093683171368
-Статус: offline
-Присоединился: 2024-08-06 21:15:40.920000+00:00
-Бот: Нет
-is_moderator: False
-is_st_moderator: False
-is_admin: False
-Репутация: 0

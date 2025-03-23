@@ -1,9 +1,0 @@
-Имя: di_montana
-ID: 905112117814898738
-Статус: offline
-Присоединился: 2024-10-19 15:56:42.107000+00:00
-Бот: Нет
-is_moderator: False
-is_st_moderator: False
-is_admin: False
-Репутация: 0

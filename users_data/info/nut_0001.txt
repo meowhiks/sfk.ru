@@ -1,9 +1,0 @@
-Имя: nut_0001
-ID: 1253754770678878420
-Статус: offline
-Присоединился: 2024-08-31 09:23:31.481000+00:00
-Бот: Нет
-is_moderator: False
-is_st_moderator: False
-is_admin: False
-Репутация: 0

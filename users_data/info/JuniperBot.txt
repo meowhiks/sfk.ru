@@ -1,9 +1,0 @@
-Имя: JuniperBot
-ID: 310848622642069504
-Статус: offline
-Присоединился: 2024-01-07 15:40:23.175000+00:00
-Бот: Да
-is_moderator: False
-is_st_moderator: False
-is_admin: False
-Репутация: 0

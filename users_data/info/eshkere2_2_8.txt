@@ -1,9 +1,0 @@
-Имя: eshkere2_2_8
-ID: 1297209218671181825
-Статус: offline
-Присоединился: 2024-11-23 17:57:22.554000+00:00
-Бот: Нет
-is_moderator: False
-is_st_moderator: False
-is_admin: False
-Репутация: 0

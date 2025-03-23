@@ -1,9 +1,0 @@
-Имя: nikki09928
-ID: 1173561878224588843
-Статус: offline
-Присоединился: 2023-11-17 08:18:42.573000+00:00
-Бот: Нет
-is_moderator: False
-is_st_moderator: False
-is_admin: False
-Репутация: 0

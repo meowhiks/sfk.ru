@@ -1,9 +1,0 @@
-Имя: raz1el22
-ID: 804747814487195648
-Статус: offline
-Присоединился: 2024-09-08 16:35:15.328000+00:00
-Бот: Нет
-is_moderator: False
-is_st_moderator: False
-is_admin: False
-Репутация: 0

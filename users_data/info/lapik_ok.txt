@@ -1,9 +1,0 @@
-Имя: lapik_ok
-ID: 499252869917048852
-Статус: offline
-Присоединился: 2024-04-20 23:38:36.418000+00:00
-Бот: Нет
-is_moderator: False
-is_st_moderator: False
-is_admin: False
-Репутация: 0

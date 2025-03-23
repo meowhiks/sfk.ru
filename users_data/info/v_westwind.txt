@@ -1,9 +1,0 @@
-Имя: v_westwind
-ID: 1171454113565917194
-Статус: offline
-Присоединился: 2024-08-11 20:19:09.260000+00:00
-Бот: Нет
-is_moderator: False
-is_st_moderator: False
-is_admin: False
-Репутация: 0

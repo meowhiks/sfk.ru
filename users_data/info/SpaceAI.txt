@@ -1,9 +1,0 @@
-Имя: SpaceAI
-ID: 854409704704573450
-Статус: offline
-Присоединился: 2024-07-21 19:19:20.960000+00:00
-Бот: Да
-is_moderator: False
-is_st_moderator: False
-is_admin: False
-Репутация: 0

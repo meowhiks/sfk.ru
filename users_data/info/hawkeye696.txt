@@ -1,9 +1,0 @@
-Имя: hawkeye696
-ID: 1159783846406012988
-Статус: offline
-Присоединился: 2024-09-28 19:32:23.757000+00:00
-Бот: Нет
-is_moderator: False
-is_st_moderator: False
-is_admin: False
-Репутация: 0

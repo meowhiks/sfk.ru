@@ -1,9 +1,0 @@
-Имя: hausy_lve
-ID: 827931122775752765
-Статус: offline
-Присоединился: 2024-05-06 17:34:10.195000+00:00
-Бот: Нет
-is_moderator: False
-is_st_moderator: False
-is_admin: False
-Репутация: 0

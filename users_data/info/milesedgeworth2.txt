@@ -1,9 +1,0 @@
-Имя: milesedgeworth2
-ID: 494199599527886848
-Статус: offline
-Присоединился: 2023-03-08 20:05:31.526000+00:00
-Бот: Нет
-is_moderator: False
-is_st_moderator: False
-is_admin: False
-Репутация: 0

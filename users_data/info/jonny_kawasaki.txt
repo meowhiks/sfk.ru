@@ -1,9 +1,0 @@
-Имя: jonny_kawasaki
-ID: 1069096792282628096
-Статус: offline
-Присоединился: 2023-10-15 06:57:06.002000+00:00
-Бот: Нет
-is_moderator: False
-is_st_moderator: False
-is_admin: False
-Репутация: 0

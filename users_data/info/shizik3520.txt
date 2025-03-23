@@ -1,9 +1,0 @@
-Имя: shizik3520
-ID: 902314320959000577
-Статус: offline
-Присоединился: 2024-08-14 17:07:58.739000+00:00
-Бот: Нет
-is_moderator: False
-is_st_moderator: False
-is_admin: False
-Репутация: 0

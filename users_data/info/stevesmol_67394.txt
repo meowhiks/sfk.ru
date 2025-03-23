@@ -1,9 +1,0 @@
-Имя: stevesmol_67394
-ID: 1148619464770850906
-Статус: offline
-Присоединился: 2024-02-21 11:20:46.067000+00:00
-Бот: Нет
-is_moderator: False
-is_st_moderator: False
-is_admin: False
-Репутация: 0

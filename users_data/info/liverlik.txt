@@ -1,9 +1,0 @@
-Имя: liverlik
-ID: 945486926490796083
-Статус: offline
-Присоединился: 2024-09-27 17:49:47.998000+00:00
-Бот: Нет
-is_moderator: False
-is_st_moderator: False
-is_admin: False
-Репутация: 0

@@ -1,9 +1,0 @@
-Имя: _thecomets3_
-ID: 997985608209285220
-Статус: offline
-Присоединился: 2023-08-03 12:42:41.657000+00:00
-Бот: Нет
-is_moderator: False
-is_st_moderator: False
-is_admin: False
-Репутация: 0

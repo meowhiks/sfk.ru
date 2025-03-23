@@ -1,9 +1,0 @@
-Имя: crafty3867
-ID: 1071209721673035867
-Статус: offline
-Присоединился: 2024-04-05 00:40:29.524000+00:00
-Бот: Нет
-is_moderator: False
-is_st_moderator: False
-is_admin: False
-Репутация: 0

@@ -1,9 +1,0 @@
-Имя: skeazzyk.
-ID: 814343258930020363
-Статус: offline
-Присоединился: 2024-06-30 22:40:04.702000+00:00
-Бот: Нет
-is_moderator: False
-is_st_moderator: False
-is_admin: False
-Репутация: 0

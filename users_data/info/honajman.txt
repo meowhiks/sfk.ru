@@ -1,9 +1,0 @@
-Имя: honajman
-ID: 665542298775584787
-Статус: offline
-Присоединился: 2023-07-10 17:00:39.066000+00:00
-Бот: Нет
-is_moderator: False
-is_st_moderator: False
-is_admin: False
-Репутация: 0

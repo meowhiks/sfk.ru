@@ -1,9 +1,0 @@
-Имя: aptem66
-ID: 623527666179506186
-Статус: offline
-Присоединился: 2024-10-07 06:51:12.420000+00:00
-Бот: Нет
-is_moderator: False
-is_st_moderator: False
-is_admin: False
-Репутация: 0

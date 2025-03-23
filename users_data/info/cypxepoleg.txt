@@ -1,9 +1,0 @@
-Имя: cypxepoleg
-ID: 776455205658558494
-Статус: offline
-Присоединился: 2024-09-05 09:49:45.513000+00:00
-Бот: Нет
-is_moderator: False
-is_st_moderator: False
-is_admin: False
-Репутация: 0

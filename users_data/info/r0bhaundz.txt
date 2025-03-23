@@ -1,9 +1,0 @@
-Имя: r0bhaundz
-ID: 1299803991387148334
-Статус: offline
-Присоединился: 2024-11-09 14:28:08.375000+00:00
-Бот: Нет
-is_moderator: False
-is_st_moderator: False
-is_admin: False
-Репутация: 0

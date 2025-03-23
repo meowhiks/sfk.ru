@@ -1,9 +1,0 @@
-Имя: artemka0239
-ID: 1140920418920845373
-Статус: offline
-Присоединился: 2024-03-04 12:26:27.893000+00:00
-Бот: Нет
-is_moderator: False
-is_st_moderator: False
-is_admin: False
-Репутация: 0

@@ -1,9 +1,0 @@
-Имя: dimasik9243
-ID: 902667479883595826
-Статус: offline
-Присоединился: 2024-02-25 17:43:36.640000+00:00
-Бот: Нет
-is_moderator: False
-is_st_moderator: False
-is_admin: False
-Репутация: 0

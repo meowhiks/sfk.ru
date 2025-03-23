@@ -1,9 +1,0 @@
-Имя: banan123_1
-ID: 1210980493063888916
-Статус: offline
-Присоединился: 2024-02-24 16:12:16.101000+00:00
-Бот: Нет
-is_moderator: False
-is_st_moderator: False
-is_admin: False
-Репутация: 80

@@ -1,9 +1,0 @@
-Имя: y3sstw_94030
-ID: 1204430274080022629
-Статус: offline
-Присоединился: 2024-03-08 07:06:39.882000+00:00
-Бот: Нет
-is_moderator: False
-is_st_moderator: False
-is_admin: False
-Репутация: 0

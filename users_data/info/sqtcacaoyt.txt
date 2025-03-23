@@ -1,9 +1,0 @@
-Имя: sqtcacaoyt
-ID: 1032930296137535579
-Статус: offline
-Присоединился: 2024-02-26 15:35:48.227000+00:00
-Бот: Нет
-is_moderator: False
-is_st_moderator: False
-is_admin: False
-Репутация: 38

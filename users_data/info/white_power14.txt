@@ -1,9 +1,0 @@
-Имя: white_power14
-ID: 485114806236610571
-Статус: offline
-Присоединился: 2023-06-03 10:11:51.109000+00:00
-Бот: Нет
-is_moderator: False
-is_st_moderator: False
-is_admin: False
-Репутация: 0

@@ -1,9 +1,0 @@
-Имя: thomas_marzeno
-ID: 795232209233510440
-Статус: offline
-Присоединился: 2023-07-06 09:59:05.474000+00:00
-Бот: Нет
-is_moderator: False
-is_st_moderator: False
-is_admin: False
-Репутация: 0

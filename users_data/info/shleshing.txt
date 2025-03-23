@@ -1,9 +1,0 @@
-Имя: shleshing
-ID: 698154175082659940
-Статус: offline
-Присоединился: 2024-08-30 17:32:45.750000+00:00
-Бот: Нет
-is_moderator: False
-is_st_moderator: False
-is_admin: False
-Репутация: -100

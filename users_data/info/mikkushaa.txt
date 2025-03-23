@@ -1,9 +1,0 @@
-Имя: mikkushaa
-ID: 769869957558697984
-Статус: offline
-Присоединился: 2024-02-03 14:11:47.973000+00:00
-Бот: Нет
-is_moderator: False
-is_st_moderator: False
-is_admin: False
-Репутация: 0

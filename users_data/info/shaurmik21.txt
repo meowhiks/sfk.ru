@@ -1,9 +1,0 @@
-Имя: shaurmik21
-ID: 750073917661773895
-Статус: offline
-Присоединился: 2024-10-06 11:01:51.332000+00:00
-Бот: Нет
-is_moderator: False
-is_st_moderator: False
-is_admin: False
-Репутация: 0
