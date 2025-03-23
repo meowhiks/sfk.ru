@@ -45,12 +45,18 @@
         }
 
         .cat-container {
-            position: relative;
+            position: absolute;
             width: 120px;
             height: 120px;
             z-index: 10;
             opacity: 0;
             animation: fadeIn 1.5s ease-in-out forwards;
+            cursor: grab;
+            touch-action: none;
+        }
+
+        .cat-container:active {
+            cursor: grabbing;
         }
 
         .cat {
@@ -248,7 +254,7 @@
     <h1>Сервер для котиков</h1>
     <p>Мы на перерыве...</p>
 
-    <div class="cat-container">
+    <div class="cat-container" id="draggable-cat">
         <div class="cat">
             <div class="cat-body"></div>
             <div class="cat-head">
@@ -270,5 +276,9 @@
             <div class="paw paw-right-back"></div>
         </div>
     </div>
+
+    <script src="script.js">
+        
+    </script>
 </body>
 </html>
