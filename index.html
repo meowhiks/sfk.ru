@@ -5,19 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сервер для котиков</title>
     <style>
+        :root {
+            --bg-color: #f0f0f0;
+            --text-color: #333333;
+            --cat-body-color: #555555;
+            --cat-head-color: #666666;
+            --cat-paw-color: #444444; 
+            --whisker-color: #333333; 
+            --nose-color: #ff6b6b;
+            --eye-color: #ffffff;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #121212;
+                --text-color: #ffffff;
+                --cat-body-color: #e6e6e6;
+                --cat-head-color: #f5f5f5;
+                --cat-paw-color: #d0d0d0; 
+                --whisker-color: #bbbbbb; 
+                --nose-color: #ff6b6b;
+                --eye-color: #222222;
+            }
+        }
+
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #121212;
+            background-color: var(--bg-color);
             height: 100vh;
             margin: 0;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            color: white;
+            color: var(--text-color);
             text-align: center;
             overflow: hidden;
             position: relative;
+            transition: background-color 0.3s ease;
         }
 
         h1 {
@@ -38,6 +63,26 @@
             animation: fadeIn 1.5s ease-in-out forwards;
             animation-delay: 1.2s;
         }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            p {
+                font-size: 1.4rem;
+                margin-bottom: 2rem;
+            }
+        }
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            p {
+                font-size: 1.1rem;
+                margin-bottom: 1.5rem;
+            }
+        }
 
         @keyframes fadeIn {
             0% { opacity: 0; transform: translateY(20px); }
@@ -53,6 +98,7 @@
             animation: fadeIn 1.5s ease-in-out forwards;
             cursor: grab;
             touch-action: none;
+            transition: transform 0.1s linear;
         }
 
         .cat-container:active {
@@ -69,23 +115,25 @@
             position: absolute;
             width: 80px;
             height: 45px;
-            background-color: #e6e6e6;
+            background-color: var(--cat-body-color);
             border-radius: 40px 40px 20px 20px;
             top: 45px;
             left: 20px;
             z-index: 1;
+            transition: background-color 0.3s ease;
         }
 
         .cat-head {
             position: absolute;
             width: 70px;
             height: 65px;
-            background-color: #f5f5f5;
+            background-color: var(--cat-head-color);
             border-radius: 50%;
             top: 10px;
             left: 25px;
             z-index: 2;
             animation: headMove 4s ease-in-out infinite;
+            transition: background-color 0.3s ease;
         }
 
         @keyframes headMove {
@@ -101,8 +149,9 @@
             height: 0;
             border-left: 15px solid transparent;
             border-right: 15px solid transparent;
-            border-bottom: 25px solid #f5f5f5;
+            border-bottom: 25px solid var(--cat-head-color);
             z-index: 1;
+            transition: border-bottom-color 0.3s ease;
         }
 
         .ear-left {
@@ -133,10 +182,11 @@
             position: absolute;
             width: 12px;
             height: 20px;
-            background-color: #333;
+            background-color: var(--eye-color);
             border-radius: 50%;
             top: 25px;
             animation: blink 4s infinite;
+            transition: background-color 0.3s ease;
         }
 
         .eye-left {
@@ -156,30 +206,33 @@
             position: absolute;
             width: 10px;
             height: 7px;
-            background-color: #ff6b6b;
+            background-color: var(--nose-color);
             border-radius: 50%;
             top: 38px;
             left: 50%;
             transform: translateX(-50%);
+            transition: background-color 0.3s ease;
         }
 
         .mouth {
             position: absolute;
             width: 8px;
             height: 5px;
-            border-bottom: 2px solid #222;
+            border-bottom: 2px solid var(--eye-color);
             border-radius: 0 0 50% 50%;
             top: 48px;
             left: 50%;
             transform: translateX(-50%);
+            transition: border-color 0.3s ease;
         }
 
         .whisker {
             position: absolute;
             width: 30px;
             height: 1px;
-            background-color: #bbb;
+            background-color: var(--whisker-color);
             top: 42px;
+            transition: background-color 0.3s ease;
         }
 
         .whisker1 {
@@ -208,7 +261,7 @@
             position: absolute;
             width: 40px;
             height: 10px;
-            background-color: #e6e6e6;
+            background-color: var(--cat-body-color);
             border-radius: 5px;
             bottom: 35px;
             right: -5px;
@@ -216,6 +269,7 @@
             transform: rotate(45deg);
             z-index: 0;
             animation: tailMove 3s ease-in-out infinite;
+            transition: background-color 0.3s ease;
         }
 
         @keyframes tailMove {
@@ -227,10 +281,11 @@
             position: absolute;
             width: 15px;
             height: 8px;
-            background-color: #e0e0e0;
+            background-color: var(--cat-paw-color);
             border-radius: 10px 10px 5px 5px;
             z-index: 1;
             bottom: 23px;
+            transition: transform 0.1s ease-in-out, background-color 0.3s ease;
         }
 
         .paw-left-front {
@@ -248,14 +303,119 @@
         .paw-right-back {
             left: 85px;
         }
+        @keyframes pawLeftFrontWalk {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-4px); }
+        }
+        
+        @keyframes pawRightFrontWalk {
+            0%, 100% { transform: translateY(-4px); }
+            50% { transform: translateY(0); }
+        }
+        
+        @keyframes pawLeftBackWalk {
+            0%, 100% { transform: translateY(-3px); }
+            50% { transform: translateY(0); }
+        }
+        
+        @keyframes pawRightBackWalk {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-3px); }
+        }
+        .walking .paw-left-front {
+            animation: pawLeftFrontWalk 0.3s linear infinite;
+        }
+        
+        .walking .paw-right-front {
+            animation: pawRightFrontWalk 0.3s linear infinite;
+        }
+        
+        .walking .paw-left-back {
+            animation: pawLeftBackWalk 0.3s linear infinite;
+        }
+        
+        .walking .paw-right-back {
+            animation: pawRightBackWalk 0.3s linear infinite;
+        }
+        .running .paw-left-front {
+            animation: pawLeftFrontWalk 0.15s linear infinite;
+        }
+        
+        .running .paw-right-front {
+            animation: pawRightFrontWalk 0.15s linear infinite;
+        }
+        
+        .running .paw-left-back {
+            animation: pawLeftBackWalk 0.15s linear infinite;
+        }
+        
+        .running .paw-right-back {
+            animation: pawRightBackWalk 0.15s linear infinite;
+        }
+        
+        .ground {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background-color: transparent;
+        }
+        .theme-toggle {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: none;
+            border: 2px solid var(--text-color);
+            color: var(--text-color);
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 100;
+            transition: color 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
+        }
+        
+        .theme-toggle:hover {
+            transform: scale(1.1);
+        }
+        
+        .theme-toggle:active {
+            transform: scale(0.95);
+        }
+        .light-theme {
+            --bg-color: #f0f0f0;
+            --text-color: #333333;
+            --cat-body-color: #555555;
+            --cat-head-color: #666666;
+            --cat-paw-color: #444444;
+            --whisker-color: #333333;
+            --nose-color: #ff6b6b;
+            --eye-color: #ffffff;
+        }
+        .dark-theme {
+            --bg-color: #121212;
+            --text-color: #ffffff;
+            --cat-body-color: #e6e6e6;
+            --cat-head-color: #f5f5f5;
+            --cat-paw-color: #d0d0d0;
+            --whisker-color: #bbbbbb;
+            --nose-color: #ff6b6b;
+            --eye-color: #222222;
+        }
     </style>
 </head>
 <body>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Переключить тему">🌓</button>
     <h1>Сервер для котиков</h1>
     <p>Мы на перерыве...</p>
 
     <div class="cat-container" id="draggable-cat">
-        <div class="cat">
+        <div class="cat" id="cat">
             <div class="cat-body"></div>
             <div class="cat-head">
                 <div class="ear ear-left"></div>
@@ -276,6 +436,8 @@
             <div class="paw paw-right-back"></div>
         </div>
     </div>
+    
+    <div class="ground"></div>
 
     <script src="script.js">
         
