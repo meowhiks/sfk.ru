@@ -1,1 +1,274 @@
-<!doctypehtml><html lang="ru"><meta charset="UTF-8"><meta name="viewport"content="width=device-width,initial-scale=1"><title>Сервер для котиков</title><link rel="stylesheet"href="styles.css"><body class="_a7x9z"oncontextmenu="return!1"><div class="_e6j2h"></div><div class="_c5y2q"><h1 class="_b8k3l"id="mainTitle"data-content="Сервер для котиков">Сервер для котиков</h1><div class="_d2m4n"id="pauseMessage">Мы сейчас на перерыве</div></div><script src="script.js"></script>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сервер для котиков</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #121212;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            z-index: 10;
+            opacity: 0;
+            animation: fadeIn 1.5s ease-in-out forwards;
+            animation-delay: 0.5s;
+        }
+
+        p {
+            font-size: 1.8rem;
+            margin-top: 0;
+            margin-bottom: 3rem;
+            z-index: 10;
+            opacity: 0;
+            animation: fadeIn 1.5s ease-in-out forwards;
+            animation-delay: 1.2s;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        .cat-container {
+            position: relative;
+            width: 120px;
+            height: 120px;
+            z-index: 10;
+            opacity: 0;
+            animation: fadeIn 1.5s ease-in-out forwards;
+        }
+
+        .cat {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .cat-body {
+            position: absolute;
+            width: 80px;
+            height: 45px;
+            background-color: #e6e6e6;
+            border-radius: 40px 40px 20px 20px;
+            top: 45px;
+            left: 20px;
+            z-index: 1;
+        }
+
+        .cat-head {
+            position: absolute;
+            width: 70px;
+            height: 65px;
+            background-color: #f5f5f5;
+            border-radius: 50%;
+            top: 10px;
+            left: 25px;
+            z-index: 2;
+            animation: headMove 4s ease-in-out infinite;
+        }
+
+        @keyframes headMove {
+            0%, 100% { transform: translate(0, 0) rotate(0deg); }
+            25% { transform: translate(2px, -2px) rotate(2deg); }
+            50% { transform: translate(0, 1px) rotate(0deg); }
+            75% { transform: translate(-2px, -1px) rotate(-2deg); }
+        }
+
+        .ear {
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-bottom: 25px solid #f5f5f5;
+            z-index: 1;
+        }
+
+        .ear-left {
+            top: -5px;
+            left: 5px;
+            transform: rotate(-30deg);
+            animation: earLeftTwitch 8s ease-in-out infinite;
+        }
+
+        .ear-right {
+            top: -5px;
+            right: 5px;
+            transform: rotate(30deg);
+            animation: earRightTwitch 10s ease-in-out infinite;
+        }
+
+        @keyframes earLeftTwitch {
+            0%, 90%, 100% { transform: rotate(-30deg); }
+            92%, 96% { transform: rotate(-40deg); }
+        }
+
+        @keyframes earRightTwitch {
+            0%, 85%, 100% { transform: rotate(30deg); }
+            88%, 93% { transform: rotate(40deg); }
+        }
+
+        .eye {
+            position: absolute;
+            width: 12px;
+            height: 20px;
+            background-color: #333;
+            border-radius: 50%;
+            top: 25px;
+            animation: blink 4s infinite;
+        }
+
+        .eye-left {
+            left: 18px;
+        }
+
+        .eye-right {
+            right: 18px;
+        }
+
+        @keyframes blink {
+            0%, 45%, 50%, 100% { height: 20px; transform: scaleY(1); }
+            48% { height: 20px; transform: scaleY(0.1); }
+        }
+
+        .nose {
+            position: absolute;
+            width: 10px;
+            height: 7px;
+            background-color: #ff6b6b;
+            border-radius: 50%;
+            top: 38px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .mouth {
+            position: absolute;
+            width: 8px;
+            height: 5px;
+            border-bottom: 2px solid #222;
+            border-radius: 0 0 50% 50%;
+            top: 48px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .whisker {
+            position: absolute;
+            width: 30px;
+            height: 1px;
+            background-color: #bbb;
+            top: 42px;
+        }
+
+        .whisker1 {
+            left: -15px;
+            transform: rotate(-10deg);
+        }
+
+        .whisker2 {
+            left: -18px;
+            top: 47px;
+            transform: rotate(-5deg);
+        }
+
+        .whisker3 {
+            right: -15px;
+            transform: rotate(10deg);
+        }
+
+        .whisker4 {
+            right: -18px;
+            top: 47px;
+            transform: rotate(5deg);
+        }
+
+        .tail {
+            position: absolute;
+            width: 40px;
+            height: 10px;
+            background-color: #e6e6e6;
+            border-radius: 5px;
+            bottom: 35px;
+            right: -5px;
+            transform-origin: 0 50%;
+            transform: rotate(45deg);
+            z-index: 0;
+            animation: tailMove 3s ease-in-out infinite;
+        }
+
+        @keyframes tailMove {
+            0%, 100% { transform: rotate(45deg); }
+            50% { transform: rotate(55deg); }
+        }
+
+        .paw {
+            position: absolute;
+            width: 15px;
+            height: 8px;
+            background-color: #e0e0e0;
+            border-radius: 10px 10px 5px 5px;
+            z-index: 1;
+            bottom: 23px;
+        }
+
+        .paw-left-front {
+            left: 25px;
+        }
+
+        .paw-right-front {
+            left: 45px;
+        }
+
+        .paw-left-back {
+            left: 65px;
+        }
+
+        .paw-right-back {
+            left: 85px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Сервер для котиков</h1>
+    <p>Мы на перерыве...</p>
+
+    <div class="cat-container">
+        <div class="cat">
+            <div class="cat-body"></div>
+            <div class="cat-head">
+                <div class="ear ear-left"></div>
+                <div class="ear ear-right"></div>
+                <div class="eye eye-left"></div>
+                <div class="eye eye-right"></div>
+                <div class="nose"></div>
+                <div class="mouth"></div>
+                <div class="whisker whisker1"></div>
+                <div class="whisker whisker2"></div>
+                <div class="whisker whisker3"></div>
+                <div class="whisker whisker4"></div>
+            </div>
+            <div class="tail"></div>
+            <div class="paw paw-left-front"></div>
+            <div class="paw paw-right-front"></div>
+            <div class="paw paw-left-back"></div>
+            <div class="paw paw-right-back"></div>
+        </div>
+    </div>
+</body>
+</html>
