@@ -1,1 +1,146 @@
-script
+Я создал интерактивную симуляцию частиц с управлением через мышь и настройками. Частицы реагируют на курсор, есть выбор режимов взаимодействия и регулировка параметров:
+
+```python
+import tkinter as tk
+import math
+import random
+
+class ParticleSimulator:
+    def __init__(self, master):
+        self.master = master
+        master.title("Particle Simulator")
+        master.geometry("800x600")
+
+        # Настройка холста
+        self.canvas = tk.Canvas(master, bg="black", width=780, height=500)
+        self.canvas.pack(pady=10)
+
+        # Переменные управления
+        self.mouse_pos = (400, 300)
+        self.mode = tk.StringVar(value="attract")
+        self.particles = []
+        self.force = 0.5
+
+        # Элементы управления
+        control_frame = tk.LabelFrame(master, text="Управление", padx=5, pady=5)
+        control_frame.pack(fill="x", padx=10)
+
+        # Кнопки режимов
+        mode_frame = tk.Frame(control_frame)
+        mode_frame.pack(side="left")
+        tk.Radiobutton(mode_frame, text="Притяжение", variable=self.mode, 
+                      value="attract").pack(anchor="w")
+        tk.Radiobutton(mode_frame, text="Отталкивание", variable=self.mode,
+                      value="repel").pack(anchor="w")
+
+        # Шкала силы
+        self.force_scale = tk.Scale(control_frame, from_=0.1, to=2, resolution=0.1,
+                                   orient="horizontal", label="Сила",
+                                   command=lambda v: setattr(self, 'force', float(v)))
+        self.force_scale.set(self.force)
+        self.force_scale.pack(side="left", padx=20)
+
+        # Кнопки управления
+        tk.Button(control_frame, text="Добавить частицы", 
+                command=self.add_particles).pack(side="left", padx=10)
+        tk.Button(control_frame, text="Очистить", 
+                command=self.clear_particles).pack(side="left")
+
+        # Привязка событий мыши
+        self.canvas.bind("<Motion>", self.update_mouse_pos)
+        
+        # Добавляем начальные частицы
+        self.add_particles()
+        self.animate()
+
+    def add_particles(self, num=10):
+        for _ in range(num):
+            x = random.randint(50, 750)
+            y = random.randint(50, 450)
+            particle = self.canvas.create_oval(
+                x-5, y-5, x+5, y+5,
+                fill=self.random_color(),
+                outline=""
+            )
+            self.particles.append({
+                "id": particle,
+                "pos": (x, y),
+                "vel": (random.uniform(-1, 1), random.uniform(-1, 1))
+            })
+
+    def clear_particles(self):
+        for p in self.particles:
+            self.canvas.delete(p["id"])
+        self.particles = []
+
+    def random_color(self):
+        return "#{:02x}{:02x}{:02x}".format(
+            random.randint(100, 255),
+            random.randint(100, 255),
+            random.randint(100, 255)
+        )
+
+    def update_mouse_pos(self, event):
+        self.mouse_pos = (event.x, event.y)
+
+    def animate(self):
+        for p in self.particles:
+            # Рассчет вектора к курсору
+            dx = self.mouse_pos[0] - p["pos"][0]
+            dy = self.mouse_pos[1] - p["pos"][1]
+            distance = math.hypot(dx, dy)
+            
+            if distance < 5: distance = 5  # Защита от деления на ноль
+
+            # Применение выбранного режима
+            if self.mode.get() == "attract":
+                factor = self.force * 0.1 / distance
+            else:
+                factor = -self.force * 3 / distance
+
+            # Обновление скорости
+            new_vx = p["vel"][0] * 0.99 + dx * factor
+            new_vy = p["vel"][1] * 0.99 + dy * factor
+
+            # Обновление позиции
+            new_x = p["pos"][0] + new_vx
+            new_y = p["pos"][1] + new_vy
+
+            # Обработка границ
+            if new_x < 0 or new_x > 780:
+                new_vx *= -0.8
+            if new_y < 0 or new_y > 500:
+                new_vy *= -0.8
+
+            # Обновление состояния частицы
+            p["pos"] = (new_x, new_y)
+            p["vel"] = (new_vx, new_vy)
+            
+            # Перемещение на холсте
+            self.canvas.move(p["id"], new_vx, new_vy)
+
+        self.master.after(16, self.animate)
+
+if __name__ == "__main__":
+    root = tk.Tk()
+    app = ParticleSimulator(root)
+    root.mainloop()
+```
+
+Этот скрипт создает:
+1. Черный холст с разноцветными частицами
+2. Частицы взаимодействуют с курсором мыши
+3. Два режима взаимодействия: притяжение и отталкивание
+4. Управление силой взаимодействия
+5. Кнопки для добавления/очистки частиц
+6. Частицы отскакивают от границ холста
+7. Плавная анимация с физикой движения
+
+Как использовать:
+- Двигайте мышью по холсту, чтобы влиять на частицы
+- Переключайте режимы притяжения/отталкивания
+- Регулируйте силу воздействия ползунком
+- Добавляйте новые частицы или очищайте холст
+- Наблюдайте за красивыми паттернами движения частиц
+
+Частицы плавно ускоряются и замедляются, создавая гипнотический эффект взаимодействия с курсором. Можно экспериментировать с параметрами физики в коде для создания разных эффектов.
